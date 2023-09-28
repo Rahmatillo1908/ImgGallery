@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background: #333;
+    color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 140px;
+    align-items: center;
+    width: 100%;
+}
+.container {
+    display: flex;
+}
+.navbar img {
+    width: 40%;
+    height: 100%;
+}
+.container input {
+    width: 250px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+.container button {
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: rgb(30, 174, 126);
+}
+
+.displayImage {
+    width: 90%;
+    margin: 30px auto;
+    columns: 3;
+    column-gap: 40px;
+}
+.displayImage div {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 23px;
+    break-inside: avoid;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.displayImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+@media screen and (max-width: 1000px){
+    .displayImage {
+        columns: 2;
+    }
+}
+@media screen and (max-width: 600px){
+   .displayImage {
+        columns: 1;
+    }
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+    }
+    .navbar img {
+        width: 80%;
+        padding: 20px 10px;
+        height: 70%;
+    }
+    .navbar .container {
+        width: 90%;
+        padding: 0px 10px;
+        margin: auto;
+    }
+}
